@@ -1,0 +1,628 @@
+/* import fonts style name -- 
+ Lumanosimo */
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+/* Desiging Universal  */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lumanosimo', cursive;
+}
+
+/* Desiging body  */
+body {
+    background-color: #1f242d;
+    color: white;
+}
+
+/* Desiging header  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 21;
+    background: #1f242d;
+    position: fixed;
+}
+
+
+/* Desiging Navbar Start  */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 26px;
+}
+
+/* Desiging Logo */
+[alt="Logo"] {
+    height: 60px;
+    width: 60px;
+    border-radius: 120px;
+}
+
+/* Desiging List */
+ul li {
+    list-style: none;
+}
+
+/* Desiging Lisr Anchor Tag*/
+ul li a {
+    text-decoration: none;
+}
+
+/* Desiging link for active */
+a.active {
+    color: #0ef;
+}
+
+/* Desiging link on hover*/
+ul li a:hover {
+    color: #0ef;
+    border-bottom: 3px solid #05d8db;
+}
+
+/* Desiging list for when they active*/
+nav ul li a.active {
+    color: #07ecfc;
+}
+
+/* Desiging Menu Icon*/
+.menu-icon {
+    display: none;
+    font-size: 3.6rem;
+}
+
+/* Desiging Home Page Start */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 8% 2rem;
+}
+
+[alt="Profile"] {
+    width: 35vw;
+    margin: 0 15px;
+}
+
+#home-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+span {
+    color: #3de1f6;
+}
+
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Frontend Developer";
+    color: #0ef;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #1f242d;
+    border-left: 3px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "a Developer";
+    }
+
+    21%,
+    40% {
+        content: "Always learning new technologies.";
+    }
+
+    41%,
+    60% {
+        content: "Creating intuitive interfaces.";
+    }
+
+    61%,
+    80% {
+        content: "Passionate about coding.";
+    }
+
+    81%,
+    100% {
+        content: "Seeking opportunities.";
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+#home-content h1 {
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#home-content p {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+#social-media a {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 10px 4px;
+}
+
+#social-media a #github,
+#social-media a #linkedin,
+#social-media a #instagram,
+#social-media a #facebook {
+    border-radius: 50%;
+    border: 2px solid aqua;
+    font-size: 2rem;
+    padding: 2px;
+    background-color: rgb(22, 25, 24);
+}
+
+#social-media a #github:hover,
+#social-media a #linkedin:hover,
+#social-media a #instagram:hover,
+#social-media a #facebook:hover {
+    box-shadow: 0 0 1rem #07c1c1;
+}
+
+
+/* Desiging About Start  */
+
+#btn {
+    display: inline-block;
+    padding: 1rem 2.0rem;
+    background-color: #0ef;
+    border-radius: 4rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 0 0 0.5rem #0ef;
+    text-decoration: none;
+    color: #323946;
+}
+
+#btn:hover {
+    box-shadow: none;
+}
+
+#about {
+    padding: 4rem 8% 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323946;
+    height: 100vh;
+}
+
+#about-container {
+    margin: 0.1rem 2rem;
+}
+
+#about-container #heading {
+    font-size: 3.2rem;
+    list-style: 1.1;
+}
+
+#about-container h3 {
+    font-size: 1.6rem;
+}
+
+#about-container p {
+    font-size: 1.15rem;
+    margin: 0.9rem 0 1.5rem;
+    line-height: 23px;
+    color: #f0eeee;
+}
+
+
+/* Desiging Project */
+#projects {
+    padding: 4rem 8% 2rem;
+    background-color: #1f242d;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.project-box {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    height: 220px;
+    position: relative;
+}
+
+.project-box p {
+    color: black;
+    margin: 0px 5px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 15px 10px;
+    background-color: rgb(177, 33, 249);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.button-container a:hover {
+    background-color: #555;
+    display: block;
+}
+
+.project-grid .project-box {
+    position: relative;
+    border-radius: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    /* Hide any content that may overflow from .project-box */
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    /* Ensure the image stays on top */
+}
+
+.project-box .project-layer {
+    position: absolute;
+    bottom: 100%;
+    /* Initially set the layer off-screen */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), aqua);
+    opacity: 0;
+    pointer-events: click-through;
+    /* Comment or remove this line */
+    transition: opacity 0.2s ease, bottom 0.4s ease;
+    /* Add transition for the opacity and bottom properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+
+.project-box:hover .project-layer {
+    opacity: 1;
+    bottom: 0;
+    /* Move the layer up into view on hover */
+}
+
+.project-box:hover img {
+    opacity: 0.2;
+    /* Reduce image opacity on hover */
+    transition: opacity 0.2s ease;
+}
+
+
+
+/* Desiging Contact Start  */
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 8% 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+textarea {
+    width: 45vw;
+    padding: 14px;
+    background-color: #323946;
+    color: white;
+    margin: 5px 0;
+    font-size: 18px;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#submit-btn {
+    padding: 16px;
+    background-color: #23bdc8;
+    color: black;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0 0.2rem #0ef;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    box-shadow: none;
+    background-color: none
+}
+
+#contact #heading {
+    font-size: 2.5rem;
+    list-style: 1.2;
+    margin: 20px 0;
+}
+
+
+/* Desiging Footer  */
+
+footer {
+    background-color: #131313;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 1rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* CSS for screens below 950px */
+@media screen and (max-width: 1020px) {
+    header {
+        padding: 7px 0px;
+    }
+
+    #home {
+        flex-direction: column;
+        padding: 5rem 8% 1rem;
+    }
+
+    #home-content h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #home-content h1 {
+        font-size: 2.0rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        padding: 6rem 8% 1rem;
+    }
+
+    #about-container {
+        margin: 0.01rem 2rem;
+    }
+
+    #about-container #heading {
+        font-size: 2.8rem;
+        list-style: 1.0;
+    }
+
+    #about-container h3 {
+        font-size: 1.2rem;
+    }
+
+    #about-container p {
+        font-size: 1.11rem;
+        margin: 0.9rem 0 1.5rem;
+        line-height: 23px;
+        color: #f0eeee;
+    }
+
+    [alt="Profile"] {
+        width: 80%;
+        margin: 20px;
+    }
+
+    #contact {
+        padding: 0.1rem 2% 1rem;
+    }
+
+    form input,
+    textarea {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    /* Show the menu-icon */
+    .menu-icon {
+        display: block;
+        margin: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        padding: 7px 0px;
+    }
+
+    #home {
+        flex-direction: column;
+        padding: 5rem 4% 1rem;
+    }
+
+    #home-content p {
+        margin: 22px 0px;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        padding: 6rem 4% 1rem;
+    }
+
+    #about-container #heading {
+        font-size: 2.5rem;
+    }
+
+    #about-container h3 {
+        font-size: 1.1rem;
+    }
+
+    #about-container p {
+        font-size: 1.01rem;
+        margin: 0.5rem 0 1.5rem;
+        line-height: 20px;
+    }
+
+    #contact {
+        padding: 0.1rem 1% 1rem;
+    }
+
+    form input,
+    textarea {
+        width: 85vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #home {
+        flex-direction: column;
+        padding: 9rem 8% 1rem;
+        width: 100%;
+    }
+
+    .animated-text span::after {
+        height: 90%;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        padding: 8rem 9% 1rem;
+        width: 100%;
+    }
+
+    #about-container #heading {
+        font-size: 2.5rem;
+    }
+
+    #about-container h3 {
+        font-size: 1.1rem;
+    }
+
+    #about-container p {
+        font-size: 1.0rem;
+        margin: 0.5rem 0 1.5rem;
+        line-height: 20px;
+    }
+
+    #contact {
+        padding: 0.1rem 9% 1rem;
+        width: 100%;
+    }
+
+    form input,
+    textarea {
+        width: 85vw;
+    }
+
+    footer {
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+}
