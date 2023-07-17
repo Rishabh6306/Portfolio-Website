@@ -30,8 +30,7 @@ header {
     position: fixed;
 }
 
-
-/* Desiging Navbar Start  */
+/*******************  Desiging Navabr Components **************************/
 
 nav ul {
     display: flex;
@@ -80,7 +79,8 @@ nav ul li a.active {
     font-size: 3.6rem;
 }
 
-/* Desiging Home Page Start */
+
+/*******************  Desiging Home Page Components **************************/
 
 #home {
     height: 100vh;
@@ -227,7 +227,7 @@ span {
 }
 
 
-/* Desiging About Start  */
+/*******************  Desiging About Components ****************************/
 
 #btn {
     display: inline-block;
@@ -276,7 +276,8 @@ span {
 }
 
 
-/* Desiging Project */
+/*******************  Desiging Project Components ****************************/
+/* CSS code for projects section */
 #projects {
     padding: 4rem 8% 2rem;
     background-color: #1f242d;
@@ -286,79 +287,79 @@ span {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
+    grid-row-gap: 80px;
 }
 
 .project-box {
     background-color: white;
     padding: 20px;
     padding-bottom: 30px;
-    border-radius: 30px;
-    height: 220px;
+    border-radius: 60px;
+    height: 200px;
+    margin: 20px 6;
     position: relative;
 }
 
 .project-box p {
     color: black;
-    margin: 0px 5px;
-    font-size: 16px;
+    margin: 0px 3px;
+    font-size: 13px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
+    pointer-events: auto; 
 }
 
 .button-container a {
     display: inline-block;
     padding: 12px 20px;
-    margin: 15px 10px;
-    background-color: rgb(177, 33, 249);
+    margin: 10px;
+    background-color: #b121f9;
     color: white;
     text-decoration: none;
     border-radius: 18px;
     font-weight: bold;
+    pointer-events: auto; 
 }
 
 .button-container a:hover {
     background-color: #555;
     display: block;
+    pointer-events: auto; 
 }
 
 .project-grid .project-box {
     position: relative;
     border-radius: 4px;
     font-size: 14px;
-    overflow: hidden;
-    /* Hide any content that may overflow from .project-box */
 }
 
 .project-box img {
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 12px;
     position: relative;
     z-index: 2;
-    /* Ensure the image stays on top */
+    transition: opacity 0.2s ease;
 }
 
 .project-box .project-layer {
     position: absolute;
     bottom: 100%;
-    /* Initially set the layer off-screen */
     left: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.2), aqua);
     opacity: 0;
-    pointer-events: click-through;
-    /* Comment or remove this line */
+    pointer-events: none;
     transition: opacity 0.2s ease, bottom 0.4s ease;
-    /* Add transition for the opacity and bottom properties */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     color: black;
 }
@@ -366,18 +367,16 @@ span {
 .project-box:hover .project-layer {
     opacity: 1;
     bottom: 0;
-    /* Move the layer up into view on hover */
 }
 
 .project-box:hover img {
     opacity: 0.2;
-    /* Reduce image opacity on hover */
-    transition: opacity 0.2s ease;
 }
 
 
 
-/* Desiging Contact Start  */
+/*******************  Desiging Contact Components **************************/
+
 #contact {
     height: 100vh;
     display: flex;
@@ -432,7 +431,7 @@ textarea:focus {
 }
 
 
-/* Desiging Footer  */
+/*******************  Desiging Footer Components **************************/
 
 footer {
     background-color: #131313;
@@ -461,7 +460,7 @@ footer {
     margin: 0 0.5rem;
 }
 
-/* CSS for screens below 950px */
+/**********  Add Media Query for max screen width 1020px*******************/
 @media screen and (max-width: 1020px) {
     header {
         padding: 7px 0px;
@@ -523,6 +522,7 @@ footer {
     }
 }
 
+/**********  Add Media Query for max screen width 950px *******************/
 @media screen and (max-width: 950px) {
 
     /* Show the menu-icon */
@@ -531,16 +531,17 @@ footer {
         margin: 20px;
     }
 
+    header {
+        padding: 10px 0;
+    }
+
     nav ul {
         flex-direction: column;
     }
 }
 
+/**********  Add Media Query for max screen width of 550px*******************/
 @media screen and (max-width: 550px) {
-    header {
-        padding: 7px 0px;
-    }
-
     #home {
         flex-direction: column;
         padding: 5rem 4% 1rem;
@@ -579,6 +580,7 @@ footer {
     }
 }
 
+/**********  Add Media Query for max screen width 300px *******************/
 @media screen and (max-width: 300px) {
     #home {
         flex-direction: column;

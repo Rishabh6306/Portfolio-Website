@@ -1,4 +1,4 @@
-import  React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu } from 'react-icons/fi';
 
 export default function Navbar() {
