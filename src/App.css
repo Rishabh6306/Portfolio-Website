@@ -464,12 +464,12 @@ footer {
 /**********  Add Media Query for max screen width 1020px*******************/
 @media screen and (max-width: 1020px) {
     header {
-        padding: 7px 0px;
+        padding: 5px 0px;
     }
 
     #home {
         flex-direction: column;
-        padding: 5rem 8% 1rem;
+        padding: 7rem 9% 2rem;
     }
 
     #home-content h3 {
@@ -485,7 +485,8 @@ footer {
 
     #about {
         flex-direction: column-reverse;
-        padding: 6rem 8% 1rem;
+        /* padding: 6rem 8% 1rem; */
+        padding: 12rem 9% 2rem;
     }
 
     #about-container {
@@ -512,6 +513,12 @@ footer {
         width: 80%;
         margin: 20px;
     }
+
+    
+    #projects {
+        padding: 9rem 4% 1rem;
+   }
+
 
     #contact {
         padding: 0.1rem 2% 1rem;
@@ -545,7 +552,7 @@ footer {
 @media screen and (max-width: 550px) {
     #home {
         flex-direction: column;
-        padding: 5rem 4% 1rem;
+        padding: 10rem 9% 2rem;
     }
 
     #home-content p {
@@ -554,7 +561,7 @@ footer {
 
     #about {
         flex-direction: column-reverse;
-        padding: 6rem 4% 1rem;
+        padding: 10rem 4% 1rem;
     }
 
     #about-container #heading {
@@ -595,26 +602,30 @@ footer {
 
     #about {
         flex-direction: column-reverse;
-        padding: 8rem 9% 1rem;
+        padding: 11rem 10% 0.1rem;;
         width: 100%;
     }
 
     #about-container #heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     #about-container h3 {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 
     #about-container p {
-        font-size: 1.0rem;
+        font-size: 0.8rem;
         margin: 0.5rem 0 1.5rem;
         line-height: 20px;
     }
 
+    #projects {
+         padding: 10rem 4% 1rem;
+    }
+
     #contact {
-        padding: 0.1rem 9% 1rem;
+        padding: 4rem 9% 1rem;
         width: 100%;
     }
 
