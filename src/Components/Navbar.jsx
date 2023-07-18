@@ -72,7 +72,7 @@ export default function Navbar() {
     <header>
       {/* Add logo */}
       <a href="/">
-        <img src="/public/Icons&logo/logo.jpg" alt="Logo" />
+        <img src="Icons&logo/logo.jpg" alt="Logo" />
       </a>
 
       {/* Add menu icon */}
