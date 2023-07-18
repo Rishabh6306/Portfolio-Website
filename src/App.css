@@ -514,7 +514,6 @@ footer {
         margin: 20px;
     }
 
-    
     #projects {
         padding: 9rem 4% 1rem;
    }
@@ -576,6 +575,11 @@ footer {
         font-size: 1.01rem;
         margin: 0.5rem 0 1.5rem;
         line-height: 20px;
+    }
+
+    .project-box p {
+       padding-bottom: 10px;
+       font-size: 10px;
     }
 
     #contact {
