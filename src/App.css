@@ -42,8 +42,8 @@ nav ul {
 
 /* Desiging Logo */
 [alt="Logo"] {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 120px;
 }
 
@@ -93,6 +93,7 @@ nav ul li a.active {
 [alt="Profile"] {
     width: 35vw;
     margin: 0 15px;
+    border-radius: 80%;
 }
 
 #home-content h3 {
@@ -141,7 +142,7 @@ span {
 
     21%,
     40% {
-        content: "Always learning new technologies.";
+        content: "leaning new technologies.";
     }
 
     41%,
@@ -196,7 +197,7 @@ span {
 
 #home-content p {
     font-size: 1.2rem;
-    margin: 10px 0px;
+    margin: 12px 0px;
 }
 
 #social-media a {
