@@ -23,7 +23,7 @@ export default function home() {
             </div>
 
             <div className="home-img">
-                <img src='/public/Icons&logo/profile.jpg' alt="Profile" />
+                <img src='Icons&logo/profile.jpg' alt="Profile" />
             </div>
             {/* </main> */}
         </div>
