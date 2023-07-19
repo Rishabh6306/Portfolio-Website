@@ -105,7 +105,6 @@ span {
     color: #3de1f6;
 }
 
-
 .animated-text span {
     position: relative;
 }
@@ -137,28 +136,29 @@ span {
 
     0%,
     20% {
-        content: "a Developer";
+        content: "Developer";
     }
 
     21%,
     40% {
-        content: "leaning new technologies.";
+        content: "Designer";
     }
 
     41%,
     60% {
-        content: "Creating intuitive interfaces.";
+        content: "Coder";
     }
 
     61%,
     80% {
-        content: "Passionate about coding.";
+        content: "Learner";
     }
 
     81%,
     100% {
-        content: "Seeking opportunities.";
+        content: "Explorer";
     }
+
 }
 
 @keyframes typing {
@@ -174,6 +174,7 @@ span {
     90%,
     95% {
         width: 0;
+        /* height: 2.3rem; */
     }
 
     5%,
@@ -310,7 +311,7 @@ span {
 .button-container {
     display: flex;
     justify-content: center;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .button-container a {
@@ -322,13 +323,13 @@ span {
     text-decoration: none;
     border-radius: 18px;
     font-weight: bold;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .button-container a:hover {
     background-color: #555;
     display: block;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .project-grid .project-box {
@@ -516,7 +517,7 @@ footer {
 
     #projects {
         padding: 9rem 4% 1rem;
-   }
+    }
 
 
     #contact {
@@ -578,8 +579,8 @@ footer {
     }
 
     .project-box p {
-       padding-bottom: 10px;
-       font-size: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
     }
 
     #contact {
@@ -606,7 +607,8 @@ footer {
 
     #about {
         flex-direction: column-reverse;
-        padding: 11rem 10% 0.1rem;;
+        padding: 11rem 10% 0.1rem;
+        ;
         width: 100%;
     }
 
@@ -625,7 +627,7 @@ footer {
     }
 
     #projects {
-         padding: 10rem 4% 1rem;
+        padding: 10rem 4% 1rem;
     }
 
     #contact {

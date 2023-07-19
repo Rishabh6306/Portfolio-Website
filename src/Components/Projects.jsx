@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Projects() {
-   const projects = [
+  const projects = [
     {
       id: 1,
       paragraph: 'HTML, CSS',
