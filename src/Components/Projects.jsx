@@ -181,11 +181,19 @@ export default function Projects() {
     },
     {
       id: 23,
-      paragraph: 'HTML, CSS, JavaScript',
+      paragraph: 'React, Tailwind',
       image: '23.CountryInfo_WebApp.png',
       name: 'CountryInfo WebApp',
-      githubLink: 'https://github.com/Rishabh6306/MileStone-Repo/tree/main/Project-1',
+      githubLink: 'https://github.com/Rishabh6306/Countries-Info-ReactWebApp',
       liveLink: 'https://global-explorer.netlify.app/'
+    },
+    {
+      id: 24,
+      paragraph: 'React, CSS',
+      image: '24.Image_Gallery.png',
+      name: 'Image Gallery',
+      githubLink: 'https://github.com/Rishabh6306/Image-Gallery',
+      liveLink: 'NotAvaliable.html'
     },
     
   ]
