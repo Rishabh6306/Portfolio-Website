@@ -155,6 +155,39 @@ export default function Projects() {
       githubLink: 'https://github.com/Rishabh6306/PPT-Assignment/tree/main/Web%20Development/Assignment-7/Q-7%20Live%20Preview%20Webiste',
       liveLink: 'https://live-preview-site.netlify.app/'
     },
+    {
+      id: 20,
+      paragraph: 'React, CSS',
+      image: '20.Todo_WebApp_With_React.png',
+      name: 'Todo WebApp',
+      githubLink: 'https://github.com/Rishabh6306/Todo-WebApp-With-ReactJS',
+      liveLink: 'https://todo-webapp-for-task.netlify.app/'
+    },
+    {
+      id: 21,
+      paragraph: 'React, CSS',
+      image: '21.Dynamic_Code_Previewer.png',
+      name: 'Dynamic Code Previewer',
+      githubLink: 'https://github.com/Rishabh6306/Dynamic-Code-Previewer-With-React',
+      liveLink: 'https://dynamic-code-previewer.netlify.app/'
+    },
+    {
+      id: 22,
+      paragraph: 'HTML, CSS, JavaScript',
+      image: '22.Blog_Website.png',
+      name: 'Blog Website',
+      githubLink: 'https://github.com/Rishabh6306/MileStone-Repo/tree/main/Project-1',
+      liveLink: 'https://blogtrends-website.netlify.app/'
+    },
+    {
+      id: 23,
+      paragraph: 'HTML, CSS, JavaScript',
+      image: '23.CountryInfo_WebApp.png',
+      name: 'CountryInfo WebApp',
+      githubLink: 'https://github.com/Rishabh6306/MileStone-Repo/tree/main/Project-1',
+      liveLink: 'https://global-explorer.netlify.app/'
+    },
+    
   ]
 
   const reversedProjects = projects.slice().reverse();
