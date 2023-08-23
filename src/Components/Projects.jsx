@@ -195,6 +195,22 @@ export default function Projects() {
       githubLink: 'https://github.com/Rishabh6306/Image-Gallery',
       liveLink: 'NotAvaliable.html'
     },
+    {
+      id: 25,
+      paragraph: 'React, CSS',
+      image: '25.pokedex.png',
+      name: 'Pokedex',
+      githubLink: 'https://github.com/Rishabh6306/pokedex',
+      liveLink: 'https://pokemon-universe-online.netlify.app/'
+    },
+    {
+      id: 26,
+      paragraph: 'React, TailwindCSS',
+      image: '26.Image-Universe.png',
+      name: 'Image-Universe',
+      githubLink: 'https://github.com/Rishabh6306/React-Image-Gallery',
+      liveLink: 'https://image-universe.netlify.app'
+    },
     
   ]
 
