@@ -27,8 +27,6 @@ function App() {
 
       {/* Add Footer  */}
       <Footer/>
-
-
     </>
   )
 }

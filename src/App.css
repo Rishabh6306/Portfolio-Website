@@ -646,3 +646,19 @@ footer {
     }
 
 }
+
+
+/* styles.css */
+
+/* Contact.css */
+.custom-toast-container {
+    background-color: silver;
+}
+
+.custom-toast-success {
+    color: green; /* Set the text color for success toasts */
+}
+
+.custom-toast-error {
+    color: red; /* Set the text color for error toasts */
+}

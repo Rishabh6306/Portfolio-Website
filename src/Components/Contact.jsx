@@ -1,22 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const form = useRef();
 
-    const handleSubmit = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
-        // Perform form submission logic here
-        // You can access the form values using the state variables (fullName, email, subject, message)
+
+        try {
+            emailjs.init('PtQqMRRMxLowR4Hr2'); // Replace with your EmailJS user ID
+
+            const emailParams = {
+                to_email: 'rishabhsrivastav722@gmail.com', // Replace with the recipient email address
+                from_name: fullName,
+                from_email: email,
+                email_subject: subject,
+                email_message: message
+            };
+
+            const result = await emailjs.send(
+                'service_2jgi4wf',
+                'template_xiilvll',
+                emailParams,
+                'PtQqMRRMxLowR4Hr2'
+            );
+
+        console.log(result.text);
+    } catch (error) {
+        console.log(error.text);
+    }
+
     };
 
     return (
         <div id='contact'>
-            <h2 id='heading'>Contact  <span>Me</span></h2>
-            <form onSubmit={handleSubmit} method="POST" >
-                <input
+            <h2 id='heading'>Contact <span>Me</span></h2>
+            <form ref={form} onSubmit={sendEmail}>
+            <input
                     type="text"
                     placeholder="Full Name" required
                     value={fullName} name="Name"
