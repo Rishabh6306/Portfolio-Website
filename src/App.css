@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'Lumanosimo', cursive;
 }
 
@@ -28,6 +27,10 @@ header {
     z-index: 21;
     background: #1f242d;
     position: fixed;
+}
+
+#toaster {
+    color: rgb(214, 68, 68) !important;
 }
 
 /*******************  Desiging Navabr Components **************************/
@@ -55,6 +58,7 @@ ul li {
 /* Desiging Lisr Anchor Tag*/
 ul li a {
     text-decoration: none;
+    color: white;
 }
 
 /* Desiging link for active */
@@ -208,6 +212,7 @@ span {
     width: 3rem;
     height: 3rem;
     margin: 10px 4px;
+    color: white;
 }
 
 #social-media a #github,
@@ -645,20 +650,4 @@ footer {
         padding: 1rem 2rem;
     }
 
-}
-
-
-/* styles.css */
-
-/* Contact.css */
-.custom-toast-container {
-    background-color: silver;
-}
-
-.custom-toast-success {
-    color: green; /* Set the text color for success toasts */
-}
-
-.custom-toast-error {
-    color: red; /* Set the text color for error toasts */
 }

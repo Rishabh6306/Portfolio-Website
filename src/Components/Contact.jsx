@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 export default function Contact() {
     const [fullName, setFullName] = useState('');
@@ -29,18 +31,24 @@ export default function Contact() {
                 'PtQqMRRMxLowR4Hr2'
             );
 
-        console.log(result.text);
-    } catch (error) {
-        console.log(error.text);
-    }
+            console.log(result.text);
 
+            // Show success toast
+            toast('Form Succefully Submitted');
+        } catch (error) {
+            console.log(error.text);
+
+            // Show error toast
+            toast('Faild to Submit');
+        }
     };
+
 
     return (
         <div id='contact'>
             <h2 id='heading'>Contact <span>Me</span></h2>
             <form ref={form} onSubmit={sendEmail}>
-            <input
+                <input
                     type="text"
                     placeholder="Full Name" required
                     value={fullName} name="Name"
@@ -60,8 +68,9 @@ export default function Contact() {
                 />
                 <textarea value={message}
                     onChange={(e) => setMessage(e.target.value)} placeholder='Your Message' required name="Message" cols="50" rows="7"></textarea>
-                <button type="submit" id='submit-btn'>Submit</button>
+            <button type="submit" id='submit-btn'>Submit</button>
             </form>
+            <ToastContainer position='top-center' id="toaster" />
         </div>
     );
 }
