@@ -211,7 +211,14 @@ export default function Projects() {
       githubLink: 'https://github.com/Rishabh6306/React-Image-Gallery',
       liveLink: 'https://image-universe.netlify.app'
     },
-    
+    {
+      id: 27,
+      paragraph: 'MERN Stack, TailwindCSS',
+      image: '27.Learn_With_Fun.png',
+      name: 'Learn With Fun',
+      githubLink: 'https://github.com/Rishabh6306/Learn-With-Fun',
+      liveLink: 'https://learn-with-fun-new.netlify.app'
+    },
   ]
 
   const reversedProjects = projects.slice().reverse();
